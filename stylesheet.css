@@ -1,0 +1,431 @@
+body, ul, h1, h2, h3, h4, h5, h6, input{
+	margin: 0; 
+	padding: 0;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+body{
+	margin: 0; 
+	padding: 0;
+	color: #454545;
+	font-size: .9em;
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	color: #454545;
+	text-decoration: none;
+}
+
+header{
+	position: relative;
+	z-index: 99;
+}
+
+.top_wrap{
+	padding: 18px 0px 20px 0px;
+	max-width: 85%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_top .logo_content img{
+	width: 40px;
+}
+
+.logo_content{
+	display: inline-flex;
+}
+
+.logo_content span{
+	align-self: center;
+	font-weight: bold;
+	font-size: 1.4em;
+	padding: 5px 0px 0px 30px;
+}
+
+.primary_navigation ul{
+	list-style-type: none;
+}
+
+.primary_navigation ul li{
+	padding: 5px 10px;
+}
+
+.primary_navigation ul li img{
+	width: 20px;
+}
+
+.primary_navigation{
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.primary_navigation ul{
+	display: inline-flex;
+}
+
+.search span{
+	color: rgba(175,186,188,1);
+}
+
+input, .viewmore a{
+	padding: 10px 25px;
+    border-radius: 3px;
+    border: none;
+    font-size: .8em;
+    background-color: rgba(175,186,188,.4);
+    margin: 0px 10px;
+}
+
+.email{
+	margin-left: 0px;
+}
+
+.viewmore{
+	text-align: center;
+	margin: 50px 0px 150px;
+}
+
+.mailing_list input[type=submit]{
+	cursor: pointer;
+	background-color: rgba(175,186,188,1);
+}
+
+/* --- */
+
+.header_bottom{
+	background-color: rgba(175,186,188,.4);
+}
+
+.header_bottom .bottom_wrap{
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.bottom_wrap .secondary_navigation{
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+	padding: 11px;
+}
+
+ul.secondary_navigation a:hover::after{
+	content: "";
+    display: block;
+    position: absolute;
+    top: 128px;
+    width: 50px;
+    border-bottom: 3px solid #fff;
+    animation-name: test;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+ul.secondary_navigation #red a:hover::after{
+    border-bottom: 3px solid red;
+}
+
+@keyframes test{
+	0% {width:50px;}
+	100%{width:100px;}
+}
+
+ul.secondary_navigation a{
+	text-transform: uppercase;
+    font-size: .9em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+#red a{
+	color: rgba(255,0,0,.7);
+}
+
+/* --- */
+
+.intro{
+	position: relative;
+	margin-top: -41px;
+	overflow: auto;
+}
+
+.intro .intro_video video{
+	object-fit: cover;
+}
+
+.intro_copy, .mailing_list{
+	max-width: 550px;
+	padding: 0px 30px;
+	margin: 65px auto 80px;
+	text-align: center;
+}
+
+.intro_copy h1, .intro_copy p, .mailing_copy h1, .mailing_copy p{
+	padding-bottom: 20px;
+}
+
+.intro_copy p, .mailing_copy p{
+	line-height: 1.6em;
+	margin-bottom: 40px;
+}
+
+.intro_copy a{
+	font-size: .9em;
+	padding: 10px 20px;
+    border-radius: 6px;
+	background-color: rgba(175,186,188,1);
+}
+
+/* --- */
+
+main{
+	max-width: 85%;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.showcase{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.showcase img{
+	width: 250px;
+	flex: 1 0 auto;	
+	padding: 10px;
+}
+
+/* --- */
+
+.catalogue_header{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.products{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.products .product{
+	width: 250px;
+	flex: 1 0 auto;
+	padding-bottom: 30px;
+
+}
+
+.products .product img{
+	width: 100%;
+	cursor: pointer;
+}
+
+.product.single img{
+	width: 400px;
+}
+
+#desc h3{
+	margin: 15px 0px;
+}
+
+#desc, #item{
+	width: 350px;
+}
+/* --- */
+
+.editorials{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.editorial{
+	width: 200px;
+}
+
+.editorial-lg{
+	width: 300px;
+}
+
+.editorial img, .editorial-lg img{
+	width: 100%;
+}
+
+.editorial-lg, .editorial{
+	flex: 1 0 auto;
+	padding: 0 15px;
+}
+
+/* --- */
+
+footer{
+	background-color: rgba(175,186,188,.4);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
+footer .primary_links h3{
+	margin: 20px 0px;
+}
+
+footer .primary_links ul{
+	list-style-type: none;
+	padding-bottom: 40px;
+}
+
+/*---*/
+
+.mobile_menu{
+	visibility: hidden;
+}
+
+.mobile_menu_overlay{
+	position: fixed;
+	height: 750px;
+	width: 300px;
+	right: -300px;
+	background-color: #fff;
+	text-align: center;
+	display: block;
+}	
+
+.slidein{
+	animation-name: slidein;
+	animation-duration: .8s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+.slideout{
+	animation-name: slideout;
+	animation-duration: .4s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slidein{
+	0%{right:-300px;}
+	100%{right:0}
+}
+
+@keyframes slideout{
+	0%{right:0;}
+	100%{right:-300px}
+}
+
+.mobile_navigation{
+	list-style-type: none;
+	padding-top: 150px;
+}
+
+.mobile_navigation li{
+	font-size: 2.5em;
+	padding: 10px;
+}
+
+ul.mobile_navigation li a:hover::after{
+	content: "";
+    display: block;
+    position: relative;
+    width: 50px;
+    right: -90px;
+    border-bottom: 3px solid #000;
+    animation-name: test;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+#closemodal{
+	position: absolute;
+	right: 0;
+}
+
+.thatgoddamnmodaliforgotabout{
+	width: 550px;
+	position: fixed;
+	top: 200px;
+	background-color: #fff;
+	border-radius: 3px;
+	padding: 20px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0); /* this centers it*/
+    display: flex;
+    flex-flow: row wrap;
+    opacity: 0;
+}
+
+.thatgoddamnmodaliforgotabout .textwrap{
+	width: 280px;
+	padding-left: 20px;
+	align-self: center;
+}
+
+.fadein{
+	animation-name: fadein;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+@keyframes fadein{
+	from {opacity:0;}
+	to{opacity: 1;}
+}
+
+/*---*/
+
+@media only screen and (max-width: 1025px){
+	.primary_navigation .search, .primary_navigation ul, .header_bottom{
+		display: none;
+	}
+	
+	.intro{
+		margin-top: 0;
+	}
+
+	.primary_links:last-child{
+		padding-right: 55px;
+	}
+
+	.mobile_menu{
+		visibility: visible;
+		cursor: pointer;
+	}
+
+}
+
+@media only screen and (max-width: 550px){
+	.mobile_menu_overlay{
+		width: 100%;
+		right: -500px;
+	}
+	
+	@keyframes slideout{
+	0%{right:0;}
+	100%{right:-500px}
+	}
+
+	ul.mobile_navigation li a:hover::after{
+		right: -190px;
+	}
+	
+	.thatgoddamnmodaliforgotabout{
+		width: 250px;
+	}
+}
+
+
+
